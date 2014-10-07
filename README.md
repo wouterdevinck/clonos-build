@@ -6,7 +6,7 @@ by Wouter Devinck
 Build server
 ------------
 http://clonos.amusingprojects.com:8080/<br />
-<a href='http://clonos.amusingprojects.com:8080/job/Nightly%20build/'><img src='http://clonos.amusingprojects.com:8080/buildStatus/icon?job=Nightly build'></a>
+[![Build Status](http://clonos.amusingprojects.com:8080/buildStatus/icon?job=Clonos build)](http://clonos.amusingprojects.com:8080/job/Clonos%20build/)
 
 Repositories
 ------------
