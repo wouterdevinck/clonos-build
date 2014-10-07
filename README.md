@@ -3,6 +3,10 @@ Clonos
 **Open source network audio player**
 by Wouter Devinck
 
+Build server
+------------
+<a href='http://clonos.amusingprojects.com:8080/job/Nightly%20build/'><img src='http://clonos.amusingprojects.com:8080/buildStatus/icon?job=Nightly build'></a>
+
 Repositories
 ------------
  * Hardware (block diagram, schematic, pcb layout, ...): <br />
