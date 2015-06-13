@@ -5,7 +5,7 @@ by Wouter Devinck
 
 Build server
 ------------
-[![Build Status](http://clonos.amusingprojects.com:8080/buildStatus/icon?job=Clonos)](http://clonos.amusingprojects.com:8080/job/Clonos/) http://clonos.amusingprojects.com:8080/
+[![Build Status](http://37.59.116.71:8080/buildStatus/icon?job=Clonos)](http://37.59.116.71:8080/job/Clonos/) http://37.59.116.71:8080/
 
 Repositories
 ------------
