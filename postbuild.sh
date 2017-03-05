@@ -38,7 +38,7 @@ echo "Setting up loop device"
 echo "======================"
 echo ""
 
-losetup -o 34603008 /dev/loop0 $IMG_NAME
+losetup -o 34603008 --sizelimit 67108352 /dev/loop0 $IMG_NAME
 
 echo ""
 echo "Creating ext4 file system"
@@ -67,7 +67,7 @@ echo "Copying U-boot"
 echo "=============="
 echo ""
 
-dd if=buildroot/output/images/u-boot.sb of=/dev/loop0 bs=512 seek=4
+dd if=buildroot/output/images/u-boot.sb of=$IMG_NAME bs=512 seek=4
 sync
 
 echo ""
