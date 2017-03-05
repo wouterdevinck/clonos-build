@@ -67,7 +67,7 @@ echo "Copying U-boot"
 echo "=============="
 echo ""
 
-dd if=buildroot/output/images/u-boot.sb of=$IMG_NAME bs=512 seek=4
+dd if=buildroot/output/images/u-boot.sb of=$IMG_NAME bs=512 seek=8
 sync
 
 echo ""
