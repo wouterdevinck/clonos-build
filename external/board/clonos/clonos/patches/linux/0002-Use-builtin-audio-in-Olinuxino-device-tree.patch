@@ -1,18 +1,17 @@
-From a68d3fb3c79b2860a230532c178ed7685db535f7 Mon Sep 17 00:00:00 2001
-From: Robert Nelson <robertcnelson@gmail.com>
-Date: Mon, 12 Aug 2013 11:27:22 -0500
-Subject: [PATCH 2/2] ARM: dts: imx23-olinuxino: enable mxs-builtin-audio
+From 4cf23ce822eac5039f4e2b10802600cb1bb4ab15 Mon Sep 17 00:00:00 2001
+From: Wouter Devinck <wouter.devinck@gmail.com>
+Date: Mon, 22 Apr 2019 16:00:38 +0200
+Subject: [PATCH 2/2] Use builtin audio in Olinuxino device tree
 
-Signed-off-by: Robert Nelson <robertcnelson@gmail.com>
 ---
- arch/arm/boot/dts/imx23-olinuxino.dts |   25 +++++++++++++++++++++++++
- 1 file changed, 25 insertions(+)
+ arch/arm/boot/dts/imx23-olinuxino.dts | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
 
 diff --git a/arch/arm/boot/dts/imx23-olinuxino.dts b/arch/arm/boot/dts/imx23-olinuxino.dts
-index fc766ae..4a96623 100644
+index a8b1c53ebe46..89de09e28d08 100644
 --- a/arch/arm/boot/dts/imx23-olinuxino.dts
 +++ b/arch/arm/boot/dts/imx23-olinuxino.dts
-@@ -88,6 +88,25 @@
+@@ -95,6 +95,26 @@
  			usbphy0: usbphy@8007c000 {
  				status = "okay";
  			};
@@ -35,11 +34,12 @@ index fc766ae..4a96623 100644
 +				dmas = <&dma_apbx 0>, <&dma_apbx 1>;
 +				dma-names = "rx", "tx";
 +			};
++
  		};
  	};
  
-@@ -122,4 +141,10 @@
- 			gpios = <&gpio2 1 1>;
+@@ -133,4 +153,11 @@
+ 			gpios = <&gpio2 1 GPIO_ACTIVE_HIGH>;
  		};
  	};
 +
@@ -48,7 +48,8 @@ index fc766ae..4a96623 100644
 +		audio-codec = <&codec>;
 +		cpu-dai = <&platform_dai>;
 +	};
++
  };
 -- 
-1.7.10.4
+2.17.1
 
